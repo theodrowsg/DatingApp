@@ -11,7 +11,7 @@ import { AccountService } from '../_services/account.service';
 })
 export class RegisterComponent {
   accountService = inject(AccountService);
-  private toaster = inject(ToastrService);
+
   cancelRegister = output<boolean>();
   model: any = {}
   register() {
